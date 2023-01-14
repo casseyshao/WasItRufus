@@ -13,7 +13,9 @@ out = {
 # Process the input.
 # Check that the command format is correct.
 # Case when there are spaces in the directory name.
-dir = sys.argv[2]
+dir = ""
+if sys.argv[1] == "git_dir:":
+    dir = " ".join(sys.argv[2:])
 
 # Get active branch.
 try:
@@ -35,7 +37,7 @@ out["recent commit:"] = (latest >= (curr-timedelta(days=7)))
 
 # Check if the current head commit was authored by Rufus (boolean).
 author = os.popen("git log -1 --format=%an").read()
-out["blame Rufus:"] = (author == "Rufus")
+out["blame Rufus:"] = (author.rstrip() == "Rufus")
 
 # Print output.
 for key in out:
