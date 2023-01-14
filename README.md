@@ -1,7 +1,6 @@
 # Instructions to Run the Project
-Please include instructions on how to run it in your README.md.
 
-This project is run using the following command format:
+This project is run using the following command:
 ```
 python3 was_it_rufus.py git_dir: <name of directory in which to assess git status>
 ```
