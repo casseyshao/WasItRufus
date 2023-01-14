@@ -1,6 +1,14 @@
+# Instructions to Run the Project
+Please include instructions on how to run it in your README.md.
+
+This project is run using the following command format:
+```
+python3 was_it_rufus.py git_dir: <name of directory in which to assess git status>
+```
+
 # Was it Rufus?
 
-## Project instructions
+## Project Instructions
 Your task is to create a program that prints specific facts about a local git repository. You can use any language, and you are welcome to import existing packages.
 
 Your program should take in one argument:
@@ -21,5 +29,5 @@ recent commit: True
 blame Rufus: True
 ```
 
-## How to submit
+## How to Submit
 Upload your completed project to your GitHub, and then paste a link to the repository below in the form along with any comments you have about your solution. Please include instructions on how to run it in your README.md.
